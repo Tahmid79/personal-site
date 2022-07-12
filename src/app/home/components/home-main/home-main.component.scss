@@ -1,0 +1,44 @@
+.toolbar{
+    background-color: black ;
+    color: white ;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid white ;
+}
+
+.banner-container {
+    height: 800px;
+    width: 100%;
+    * {
+        color: white;
+    }
+    background-image: url("/assets/images/tahmid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+
+    background-color: hsl(207, 23%, 34%);
+    background-blend-mode: multiply;
+
+}
+
+.red-gradient {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #e74c3c, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #e74c3c, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-container {
+    margin-left: 10%;
+}
+
+.large-text {
+    font-size: 7em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    color: white !important;
+    line-height: 1.2em ;
+}
