@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { MaterialModule } from '../material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
 
 const exports: any = [PageHeaderComponent] ;
 
@@ -13,7 +14,8 @@ const exports: any = [PageHeaderComponent] ;
   imports: [
     CommonModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule
   ], exports: exports
 })
 export class SharedComponentsModule { }
