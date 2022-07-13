@@ -4,7 +4,7 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { MaterialModule } from '../material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-const exports: any = [] ;
+const exports: any = [PageHeaderComponent] ;
 
 @NgModule({
   declarations: [
