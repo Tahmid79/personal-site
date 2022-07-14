@@ -1,7 +1,13 @@
-<div class="skills-container" fxLayout="row wrap" fxLayoutAlign="start center" >
-    <div *ngFor="let skill of skills" >
-        <app-skill-box  [skillInfo]="skill" ></app-skill-box>
+<div class="container">
+
+    <h1 class="title">Skills</h1>
+
+    <div class="skills-container" >
+        <div *ngFor="let skill of skills" >
+            <app-skill-box  [skillInfo]="skill" ></app-skill-box>
+        </div>
     </div>
-</div>
     
+</div>
+
 

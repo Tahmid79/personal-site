@@ -1,10 +1,16 @@
 .container{
-    width: 100% ;
+    padding: 1.5% ;
+}
+
+.title{
+    font-size: 24px ;
+    font-weight: bold ;
+    margin: 10px ;
 }
 
 .skills-container{
-    // &::after {
-    //     content: "";
-    //     flex: auto;
-    // }
+    display: grid; /* 1 */
+    grid-template-columns: repeat(auto-fill, 170px); /* 2 */
+    // grid-gap: 1rem; /* 3 */
+    justify-content: space-around ; /* 4 */
 }
