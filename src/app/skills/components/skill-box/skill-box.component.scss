@@ -11,11 +11,14 @@
 }
 
 .box-container{
-    height: 150px ;
-    width: 150px ;
+    height: 140px ;
+    width: 140px ;
     border-radius: 7px ;
 
     background-size: contain ;
     background-repeat: no-repeat;
     background-position: center;
+
+    background-origin: content-box;
+    padding: 10px ;
 }
