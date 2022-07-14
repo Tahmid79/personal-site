@@ -1,0 +1,25 @@
+.project-name{
+    font-size: 32px ;
+    font-weight: bold ;   
+    margin-bottom: 20px ;
+}
+
+.project-image{
+    height: 500px ;
+    width: 500px ;
+    border-radius: 6px ;
+
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position: center;
+
+    background-origin: content-box;
+    padding: 30px 15px ;
+}
+
+.project-description{
+    p{
+        font-size: 20px ;
+        line-height: 1.3em ;
+    }
+}

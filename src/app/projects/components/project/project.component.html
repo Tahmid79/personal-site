@@ -1,0 +1,12 @@
+<div>
+    <h1 class="project-name">{{projectInfo.name}}</h1>
+    <div fxLayout="row" fxLayoutAlign="space-between" >
+        <div class="project-image mat-elevation-z5" fxFlex="47%" 
+            [style.background-image]="getProjectImage(projectInfo.image)" >
+        </div>
+    
+        <div class="project-description" fxFlex="47%" >
+            <p>{{projectInfo.description}}</p>
+        </div>
+    </div>
+</div>
