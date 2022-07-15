@@ -5,3 +5,10 @@
     }
     background-color: #1C1C1C;
 }
+
+.grid{
+    display: grid; /* 1 */
+    grid-template-columns: repeat(auto-fill, 45%); /* 2 */
+    // grid-gap: 1rem; /* 3 */
+    justify-content: space-around ; /* 4 */
+}
