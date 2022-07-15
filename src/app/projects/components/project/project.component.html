@@ -5,8 +5,20 @@
             [style.background-image]="getProjectImage(projectInfo.image)" >
         </div>
     
-        <div class="project-description" fxFlex="47%" >
-            <p>{{projectInfo.description}}</p>
+        <div fxFlex="47%" >
+            <mat-card>
+                <mat-card-header>
+                  <mat-card-title>Project Name</mat-card-title>
+                  <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                  <p>
+                    {{projectInfo.description}}
+                  </p>
+                </mat-card-content>
+            </mat-card>
         </div>
+       
     </div>
 </div>
