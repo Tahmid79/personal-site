@@ -1,24 +1,13 @@
-<div>
-    <h1 class="project-name">{{projectInfo.name}}</h1>
-    <div fxLayout="row" fxLayoutAlign="space-between" >
-        <div class="project-image mat-elevation-z5" fxFlex="47%" 
-            [style.background-image]="getProjectImage(projectInfo.image)" >
-        </div>
-    
-        <div fxFlex="47%" >
-            <mat-card>
-                <mat-card-header>
-                  <mat-card-title>Project Name</mat-card-title>
-                  <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-                </mat-card-header>
-                <mat-divider></mat-divider>
-                <mat-card-content>
-                  <p>
-                    {{projectInfo.description}}
-                  </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-       
+<div class="project-holder">
+
+    <div class="project-image" 
+        [style.background-image]="getProjectImage(projectInfo.image)" >
     </div>
+    
+
+    <div class="project-description-container">
+        <h1 class="project-name">{{projectInfo.name}}</h1>
+    </div>
+    
 </div>
+

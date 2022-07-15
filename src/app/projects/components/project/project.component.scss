@@ -1,3 +1,7 @@
+.project-holder{
+    width: 400px ;
+}
+
 .project-name{
     font-size: 32px ;
     font-weight: bold ;   
@@ -5,9 +9,9 @@
 }
 
 .project-image{
-    height: 500px ;
-    width: 500px ;
-    border-radius: 6px ;
+    height: 300px ;
+    width: calc(100% - 30px) ;
+    // border-radius: 6px ;
 
     background-repeat: no-repeat;
     background-size: contain ;
@@ -17,6 +21,15 @@
 
     background-origin: content-box;
     padding: 30px 15px ;
+}
+
+.project-description-container{
+    width: 100%;
+    background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+    height: 200px ;
+    *{
+        color: white ;
+    }
 }
 
 .project-description{
