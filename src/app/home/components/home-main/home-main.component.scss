@@ -1,14 +1,8 @@
-.toolbar{
-    background-color: black ;
-    color: white ;
-    position: sticky;
-    top: 0;
-    border-bottom: 2px solid white ;
-}
-
 .banner-container {
     height: 800px;
     width: 100%;
+    min-height: calc(100vh - 60px); //toolbar height 
+
     * {
         color: white;
     }
