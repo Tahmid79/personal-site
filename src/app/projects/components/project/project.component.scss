@@ -33,6 +33,25 @@
     }
 }
 
+.project-title{
+    font-size: 32px ;
+    font-weight: bold ;   
+}
+
 .description{
-    font-size: 22px;
+    font-size: 20px ;
+}
+
+.link-container{
+    height: 50px ;
+    width: 100px ;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center ;
+
+    background-origin: content-box;
+    padding: 10px ;
+
+    background-color: black;
+    border-radius: 3px ;
 }

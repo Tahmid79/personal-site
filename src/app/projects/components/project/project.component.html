@@ -1,16 +1,25 @@
 <div class="project-holder">
 
     <div class="project-image" 
-        [style.background-image]="getProjectImage(projectInfo.image)" >
+        [style.background-image]="getImageCss(projectInfo.image, projectDir)" >
     </div>
     
-
     <div class="project-description-container">
         <h1 class="project-name">{{projectInfo.name}}</h1>
 
         <p class="description">
             {{projectInfo.description}}
         </p>
+
+        <h1 class="project-title">{{linkTitle}}</h1>
+
+        <div fxLayout="row" fxLayoutGap="10px">
+            <div class="link-container mat-elevation-z1"  *ngFor="let link of links"
+                [style.background-image]="getImageCss(link, linkDir)" >
+            </div>
+        </div>
+       
+
     </div>
     
 </div>
