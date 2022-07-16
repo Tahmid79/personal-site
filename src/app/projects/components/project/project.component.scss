@@ -63,7 +63,25 @@
     margin-top: 30px ;
     height: 100px ;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px ;
 
     background-color: white ;
     border-radius: 5px ;
+
+    overflow-x: auto;
+}
+
+.skill-holder{
+    height: 60px ;
+    width: 60px ;
+
+    border-radius: 7px ;
+
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center ;
+
+    background-origin: content-box;
+    padding: 5px ;
 }

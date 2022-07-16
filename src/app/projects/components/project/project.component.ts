@@ -12,6 +12,8 @@ export class ProjectComponent implements OnInit {
   @Input() projectInfo: IProject =  { 'name': 'card', 'image': 'card.JPG', 'description': 'This is the project description' } ;
   projectDir = '/assets/images/projects/' ;
   linkDir = '/assets/images/' ;
+  skillsDir = '/assets/images/tech stack old/' ;
+
   skills = Skills ;
   tech = 'Technology' ;
 
