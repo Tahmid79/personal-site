@@ -36,3 +36,6 @@
     color: white !important;
     line-height: 1.2em ;
 }
+
+.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) forwards;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) forwards}
+ @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
