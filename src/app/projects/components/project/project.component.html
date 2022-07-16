@@ -14,9 +14,15 @@
         <h1 class="project-title">{{linkTitle}}</h1>
 
         <div fxLayout="row" fxLayoutGap="10px">
-            <div class="link-container mat-elevation-z1"  *ngFor="let link of links"
+            <div class="link-container mat-elevation-z10"  *ngFor="let link of links"
                 [style.background-image]="getImageCss(link, linkDir)" >
             </div>
+        </div>
+
+        <h1 class="project-title">{{tech}}</h1>
+
+        <div class="stack-container mat-elevation-z5">
+            
         </div>
        
 

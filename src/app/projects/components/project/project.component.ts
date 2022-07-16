@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IProject } from '../../../data/projects';
+import { Skills } from '../../../data/skills';
 
 @Component({
   selector: 'app-project',
@@ -11,6 +12,8 @@ export class ProjectComponent implements OnInit {
   @Input() projectInfo: IProject =  { 'name': 'card', 'image': 'card.JPG', 'description': 'This is the project description' } ;
   projectDir = '/assets/images/projects/' ;
   linkDir = '/assets/images/' ;
+  skills = Skills ;
+  tech = 'Technology' ;
 
   details = 'This is the project description.' ;
   linkTitle = 'Links' ;

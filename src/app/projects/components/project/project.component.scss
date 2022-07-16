@@ -9,7 +9,7 @@
 }
 
 .project-image{
-    height: 300px ;
+    height: 350px ;
     width: calc(100% - 30px) ;
     // border-radius: 6px ;
 
@@ -27,7 +27,7 @@
     width: calc(100% - 40px);
     background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
     padding: 20px ;
-    height: 300px ;
+    height: 420px ;
     *{
         color: white ;
     }
@@ -36,6 +36,8 @@
 .project-title{
     font-size: 32px ;
     font-weight: bold ;   
+    margin-top: 3px ;
+    margin-bottom: 3px ;
 }
 
 .description{
@@ -54,4 +56,14 @@
 
     background-color: black;
     border-radius: 3px ;
+    margin: 20px 0;
+}
+
+.stack-container{
+    margin-top: 30px ;
+    height: 100px ;
+    width: 100%;
+
+    background-color: white ;
+    border-radius: 5px ;
 }
