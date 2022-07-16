@@ -8,12 +8,12 @@
 
 .grid{
     display: grid; /* 1 */
-    grid-template-columns: repeat(auto-fill, 600px ); /* 2 */
+    grid-template-columns: repeat(auto-fill, 550px ); /* 2 */
     // grid-gap: 1rem; /* 3 */
     justify-content: space-around ; /* 4 */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .grid{
         grid-template-columns: repeat(auto-fill, 95% ); /* 2 */
     }
