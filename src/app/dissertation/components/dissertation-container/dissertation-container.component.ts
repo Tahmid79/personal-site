@@ -7,6 +7,9 @@ import { Topic, Description } from '../../../data/dissertation';
   styleUrls: ['./dissertation-container.component.scss']
 })
 export class DissertationContainerComponent implements OnInit {
+  linkDir = '/assets/images/' ;
+  githubImg = 'github.png' ;
+
   undergraduate_dissertation = 'Undergraduate Dissertation' ;
   topic_title = 'Topic' ;
   topic = Topic ;
@@ -14,6 +17,8 @@ export class DissertationContainerComponent implements OnInit {
   description_title = 'Description' ;
   descriptionObj = Description ;
   descriptionParagraphs: string[] = [] ;
+
+  codeLinkTitle = 'Code' ;
 
   constructor() { }
 
@@ -24,6 +29,12 @@ export class DissertationContainerComponent implements OnInit {
   par(){
     const paragraphs = Object.values(this.descriptionObj) ;
     this.descriptionParagraphs = paragraphs ;
+  }
+
+  getImageCss(image: string, dir: string) : string {
+    const url = dir + image ;
+    const imageCss =  `url("${url}")` ;
+    return imageCss ;
   }
 
 }
