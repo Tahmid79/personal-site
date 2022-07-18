@@ -1,0 +1,25 @@
+.dissertation-container{
+    background-color: #1C1C1C;
+    width: 100% ;
+    height: fit-content ;
+    min-height: calc(100vh - 60px) ; // toolbar height ;
+}
+
+.fyp-large-text{
+    font-size: 32px ;
+    font-weight: bold ;   
+    color: white ;
+    text-align: center;
+}
+
+.topic-title{
+    font-size: 32px ;
+    font-weight: bold ;   
+    color: white ;
+}
+
+.topic-text{
+    font-size: 25px ;
+    font-weight: bold ;   
+    color: white ;
+}
