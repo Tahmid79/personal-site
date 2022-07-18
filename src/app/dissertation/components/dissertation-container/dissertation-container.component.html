@@ -1,6 +1,6 @@
 <div class="dissertation-container" >
 
-    <div class="container-padding">
+    <div ngClass.gt-sm="container-padding" ngClass.lt-md="container-padding-small" >
 
         <div class="top-segment-container">
             <h1 class="page-title center-text">{{undergraduate_dissertation}}</h1>
@@ -18,12 +18,23 @@
         </div>
     
         <div class="links-container" >
-            <h1 class="fyp-large-text">{{codeLinkTitle}}</h1>
+
+            <div class="link-segment" fxLayout="row" fxLayoutGap.gt-xs="20px" fxLayoutAlign.xs="space-between" >
+                <div>
+                    <h1 class="fyp-large-text">{{codeLinkTitle}}</h1>
+                    <div class="link-container mat-elevation-z10"
+                        [style.background-image]="getImageCss(githubImg, linkDir)" >
+                    </div>
+                </div>
             
-            <div class="link-container mat-elevation-z10"
-                [style.background-image]="getImageCss(githubImg, linkDir)" >
+                <div>
+                    <h1 class="fyp-large-text">{{full_dissertation}}</h1>
+                    <div class="link-container mat-elevation-z10"
+                        [style.background-image]="getImageCss(driveImg, linkDir)" >
+                    </div>
+                </div>
             </div>
-    
+            
         </div>
 
     </div>

@@ -9,6 +9,8 @@ import { Topic, Description } from '../../../data/dissertation';
 export class DissertationContainerComponent implements OnInit {
   linkDir = '/assets/images/' ;
   githubImg = 'github.png' ;
+  driveImg = 'google drive.png' ;
+  full_dissertation = 'Dissertation' ;
 
   undergraduate_dissertation = 'Undergraduate Dissertation' ;
   topic_title = 'Topic' ;
