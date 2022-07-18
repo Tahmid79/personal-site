@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DissertationMainComponent } from './dissertation-main/dissertation-main.component';
+import { DissertationMainComponent } from './components/dissertation-main/dissertation-main.component';
 
 const routes: Routes = [
   { path: '' , component: DissertationMainComponent }

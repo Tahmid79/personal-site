@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Topic, Description, GithubLink, DriveLink } from '../../data/dissertation';
+import { Topic, Description, GithubLink, DriveLink } from '../../../data/dissertation';
 
 @Component({
   selector: 'app-dissertation-main',
