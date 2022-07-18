@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Topic } from '../../../data/dissertation';
+import { Topic, Description } from '../../../data/dissertation';
 
 @Component({
   selector: 'app-dissertation-container',
@@ -11,9 +11,19 @@ export class DissertationContainerComponent implements OnInit {
   topic_title = 'Topic' ;
   topic = Topic ;
 
+  description_title = 'Description' ;
+  descriptionObj = Description ;
+  descriptionParagraphs: string[] = [] ;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.par() ;
+  }
+
+  par(){
+    const paragraphs = Object.values(this.descriptionObj) ;
+    this.descriptionParagraphs = paragraphs ;
   }
 
 }

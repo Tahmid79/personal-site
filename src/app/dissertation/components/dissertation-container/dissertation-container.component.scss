@@ -6,7 +6,7 @@
 }
 
 .top-segment-container{
-    padding: 5% 3% ;
+    padding: 5% 3% 2.5% ;
 }
 
 .fyp-large-text{
@@ -26,4 +26,15 @@
     font-size: 25px ;
     font-weight: bold ;   
     color: white ;
+}
+
+.description-container{
+    padding:  0 3% 2.5% ;
+    margin-bottom: 20px ;
+    .description-paragraph{
+        font-size: 23px ;
+        color: white ;
+        line-height: 1.3em ;
+        margin-top: 10px;
+    }
 }
