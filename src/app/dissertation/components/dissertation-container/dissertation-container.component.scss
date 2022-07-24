@@ -1,0 +1,82 @@
+.center-text{
+    text-align: center ;
+}
+
+.page-title{
+    font-size: 38px ;
+    font-weight: bold ;   
+    color: white ;
+    line-height: 1.2em ;
+}
+
+.container-padding{
+    padding: 3% 2.5% ;
+}
+
+.container-padding-small{
+    padding: 3% 7% ;
+}
+
+.dissertation-container{
+    background-color: #1C1C1C;
+    width: 100% ;
+    height: fit-content ;
+    min-height: calc(100vh - 60px) ; // toolbar height ;
+    div{
+        padding-top: 2.5%;
+    }
+}
+
+.fyp-large-text{
+    font-size: 32px ;
+    font-weight: bold ;   
+    color: white ;
+}
+
+.topic-title{
+    font-size: 32px ;
+    font-weight: bold ;   
+    color: white ;
+}
+
+.topic-text{
+    font-size: 25px ;
+    font-weight: bold ;   
+    color: white ;
+}
+
+.description-container{
+    margin-bottom: 20px ;
+    .description-paragraph{
+        font-size: 23px ;
+        color: white ;
+        line-height: 1.3em ;
+        margin-top: 30px;
+    }
+}
+
+.container-padding .links-container{
+    padding-top: 0;  
+}
+
+.link-segment{
+    padding-top: 0 !important;  
+
+    .link-container{
+        height: 60px ;
+        width: 140px ;
+        background-size: contain ;
+        background-repeat: no-repeat;
+        background-position: center ;
+    
+        background-origin: content-box;
+        padding: 10px ;
+    
+        background-color: black;
+        border-radius: 3px ;
+        margin: 10px 0;
+    }
+    
+}
+
+

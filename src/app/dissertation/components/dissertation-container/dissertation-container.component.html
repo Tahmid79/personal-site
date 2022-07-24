@@ -1,0 +1,44 @@
+<div class="dissertation-container" >
+
+    <div ngClass.gt-sm="container-padding" ngClass.lt-md="container-padding-small" >
+
+        <div class="top-segment-container">
+            <h1 class="page-title center-text">{{undergraduate_dissertation}}</h1>
+            <h1 class="topic-title">{{topic_title}}</h1>
+            <h1 class="topic-text">{{topic}}</h1>
+        </div>
+    
+        <div class="description-container" >
+            <h1 class="fyp-large-text">{{description_title}}</h1>
+    
+            <ng-container *ngFor="let paragraph of descriptionParagraphs" >
+                <p class="description-paragraph" >{{paragraph}}</p>
+            </ng-container>
+        
+        </div>
+    
+        <div class="links-container" >
+
+            <div class="link-segment" fxLayout="row" fxLayoutGap.gt-xs="20px" fxLayoutAlign.xs="space-between" >
+                <div>
+                    <h1 class="fyp-large-text">{{codeLinkTitle}}</h1>
+                    <div class="link-container mat-elevation-z10"
+                        [style.background-image]="getImageCss(githubImg, linkDir)" >
+                    </div>
+                </div>
+            
+                <div>
+                    <h1 class="fyp-large-text">{{full_dissertation}}</h1>
+                    <div class="link-container mat-elevation-z10"
+                        [style.background-image]="getImageCss(driveImg, linkDir)" >
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+ 
+  
+</div>
