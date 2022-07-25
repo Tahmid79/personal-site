@@ -4,6 +4,7 @@ html, body { height: 100%; }
 body { margin: 0; }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ropa+Sans&display=swap');
+@import "ng-zorro-antd/ng-zorro-antd.compact.css";
 
 * {
     font-family: 'Ropa Sans', sans-serif !important ;
