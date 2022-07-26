@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Topic, Description } from '../../../data/dissertation';
+import { Topic, Description, VisualizationImages } from '../../../data/dissertation';
 
 @Component({
   selector: 'app-dissertation-container',
@@ -8,6 +8,8 @@ import { Topic, Description } from '../../../data/dissertation';
 })
 export class DissertationContainerComponent implements OnInit {
   linkDir = '/assets/images/' ;
+  visualizationDir = '/assets/images/visualization/' ;
+
   githubImg = 'github.png' ;
   driveImg = 'google drive.png' ;
   full_dissertation = 'Dissertation' ;
@@ -21,6 +23,9 @@ export class DissertationContainerComponent implements OnInit {
   descriptionParagraphs: string[] = [] ;
 
   codeLinkTitle = 'Code' ;
+
+  vizImages: string[] =  VisualizationImages ;
+  vizTitle = 'Plots of both datasets mapped into 3D space' ;
 
   constructor() { }
 

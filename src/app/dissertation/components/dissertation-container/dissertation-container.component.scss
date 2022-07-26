@@ -79,4 +79,22 @@
     
 }
 
+nz-carousel{
+    margin-top: 50px !important ;
+}
 
+[nz-carousel-content] {
+    text-align: center;
+    height: 450px !important;
+    // line-height: 160px;
+    background-color: #141414;
+    color: #fff;
+    overflow: hidden;
+
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center ;
+
+    border-radius: 5px ;
+
+}

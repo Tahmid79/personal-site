@@ -37,7 +37,22 @@
             
         </div>
 
+        <div>
+            <h1 class="fyp-large-text">{{vizTitle}}</h1>
+            <nz-carousel nzAutoPlay nzDotPosition="left" >
+                <ng-container *ngFor="let image of vizImages; let index" >
+                    <div nz-carousel-content 
+                         [style.background-image]="getImageCss(image,visualizationDir)" >
+                        <!-- <h3>{{ index }}</h3> -->
+                      </div>
+                </ng-container>
+            </nz-carousel>
+        </div>
+    
+
     </div>
+
+
 
  
   
