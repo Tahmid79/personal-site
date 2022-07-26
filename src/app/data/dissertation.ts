@@ -11,3 +11,5 @@ export const Description = {
 export const GithubLink = 'https://github.com/Tahmid79/Todd_Golub_Dataset' ;
 
 export const DriveLink = 'https://drive.google.com/drive/folders/1PRtagP4N8-KHZD3oeq_7gKkM54-Gb68J?usp=sharing' ;
+
+export const VisualizationImages = ['ancd_1.png', 'ancd_2.png', 'ancd_both.png', 'ancd_top.png', 'isomap-2.png', 'isomap_1.png', 'isomap_both.png', 'isomap_top.png', 'lle_1.png', 'lle_2.png', 'lle_both.png', 'lle_top.png', 'pca_1.png', 'pca_2.png', 'pca_both.png', 'pca_top.png'];
