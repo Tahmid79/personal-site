@@ -60,7 +60,27 @@
     }
 }
 
-.degree{
-    font-size: 30px ;
+.degree , .dissertation-header{
+    font-size: 32px ;
     font-weight: bold ;
+}
+
+.dissertation-info{
+    margin-top: 170px ;
+    *{
+        text-align: center ;
+        line-height: 1.2em ;
+    }
+}
+
+.dissertation-title{
+    margin-top: 20px ;
+    font-size: 25px ;
+}
+
+.fyp-link{
+    margin-top: auto ;
+    a{
+        color: darkblue;
+    }
 }
