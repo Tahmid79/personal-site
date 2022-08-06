@@ -1,0 +1,68 @@
+.experience-container{
+    height: fit-content ;
+    min-height: 500px ;
+    width: 100% ;
+    background-color: #1C1C1C; ;
+}
+
+.page-title{
+    font-size: 42px ;
+    font-weight: bold ;   
+    color: white ;
+    line-height: 1.2em ;
+}
+
+.text-center{
+    text-align: center ;
+}
+
+.container-padding{
+    padding: 3% 2.5% ;
+}
+
+.experience-box{
+    width: 750px;
+    height: 380px ;
+    margin: auto ;
+    margin-top: 30px ;
+    background-color: #131313 ;
+    *{
+        color: white ;
+    }
+
+    .strip{
+        width: 10px ;
+        background-color: rgb(90, 88, 88) ;
+        height: 100%;
+    }
+
+    .content{
+        width: calc(100% - 10px);
+        padding: 30px ;
+    }
+}
+
+.company-info{
+    margin-bottom: 20px ;
+    .company-name{
+        font-size: 32px ;
+        font-weight: bold ;
+    }
+
+    .working-period{
+        color: darkgrey ;
+    }
+}
+
+.job-info{
+    .job-title{
+        font-size: 28px ;
+        font-weight: bold ;
+    }
+    p{
+        font-size: 20px ;
+        margin-top: 15px ;
+        color: darkgrey ;
+        line-height: 1.2em ;
+    }
+}
