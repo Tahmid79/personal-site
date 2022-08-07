@@ -5,16 +5,17 @@
             fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="space-around center" fxLayoutGap.gt-sm="10px"
             fxLayout.lt-md="column" fxLayoutAlign.lt-md="start center"  fxLayoutGap.lt-md="40px" >
 
-            <div class="education-box degree-info" fxLayout="column" fxLayoutAlign="center center" >
-                <div class="uni-logo" ></div>
-                <div class="degree" >{{degree}}</div>
-                <div fxFlexAlign="end" class="accrediation">{{accreditation}}</div>
+            <div class="education-box" fxLayout="column" fxLayoutAlign="center center" 
+                 ngClass.gt-sm="degree-info" ngClass.lt-md="mobile-box-size" fxLayoutGap.lt-md="10%"   >
+                    <div class="uni-logo" ngClass.lt-md="small-logo" ></div>
+                    <div class="degree"  ngClass.lt-md="small-header" >{{degree}}</div>
+                    <div fxFlexAlign="end" class="accrediation">{{accreditation}}</div>
             </div>
         
-            <div class="education-box" fxLayout="column" fxLayoutAlign="center center" >
-                <div class="dissertation-info">
-                    <div class="dissertation-header" > {{undergad_dissertation_header}} </div>
-                    <div class="dissertation-title" > {{undergad_dissertation_title}} </div>
+            <div class="education-box" ngClass.lt-md="mobile-box-size" fxLayout="column" fxLayoutAlign="center center" >
+                <div class="dissertation-info" ngClass.lt-sm="dissertation-info-small" >
+                    <div class="dissertation-header" ngClass.lt-md="small-header" > {{undergad_dissertation_header}} </div>
+                    <div class="dissertation-title" ngClass.lt-md="small-title" > {{undergad_dissertation_title}} </div>
                 </div>
                 <div class="fyp-link" fxFlexAlign="end">
                     <a routerLink="fyp" >Details</a>

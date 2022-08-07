@@ -44,6 +44,11 @@
     }
 }
 
+.mobile-box-size{
+    width: 350px !important ;
+    height: 350px !important ;
+}
+
 .uni-logo{
     background-image: url("/assets/images/nottingham.png");
     background-repeat: no-repeat;
@@ -52,6 +57,10 @@
 
     width: 80% ;
     height: 150px ;
+}
+
+.small-logo{
+    height: 80px ;
 }
 
 .degree-info{
@@ -63,6 +72,7 @@
 .degree , .dissertation-header{
     font-size: 32px ;
     font-weight: bold ;
+    line-height: 1.2em ;
 }
 
 .dissertation-info{
@@ -73,9 +83,23 @@
     }
 }
 
+.dissertation-info-small{
+    margin-top: 100px ;
+}
+
+.small-header{
+    font-size: 25px ;
+    font-weight: bold ;
+    line-height: 1.2em ;
+}
+
 .dissertation-title{
     margin-top: 20px ;
     font-size: 25px ;
+}
+
+.small-title{
+    font-size: 20px ;
 }
 
 .fyp-link{
