@@ -7,13 +7,15 @@ import { SharedModule } from "../shared/shared.module";
 import { HomeBannerComponent } from './components/home-banner/home-banner.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { SkillSegmentComponent } from './components/skill-segment/skill-segment.component';
 
 @NgModule({
   declarations: [
     HomeMainComponent,
     HomeBannerComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SkillSegmentComponent
   ],
   imports: [
     CommonModule,

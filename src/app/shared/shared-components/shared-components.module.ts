@@ -4,12 +4,14 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { MaterialModule } from '../material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
+import { SkillComponent } from './skill/skill.component';
 
-const exports: any = [PageHeaderComponent] ;
+const exports: any = [PageHeaderComponent, SkillComponent] ;
 
 @NgModule({
   declarations: [
-    PageHeaderComponent
+    PageHeaderComponent,
+    SkillComponent
   ],
   imports: [
     CommonModule,
