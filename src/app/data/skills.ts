@@ -4,21 +4,21 @@ export interface ISkill{
 }
 
 export const Skills: ISkill[] = [
-    { 'name': 'android', 'image': 'android.png' },
-    { 'name': 'ang', 'image': 'ang.jpg' },
-    { 'name': 'c', 'image': 'c.png' },
-    { 'name': 'css', 'image': 'css.jpg' },
-    { 'name': 'django', 'image': 'django.jpg' },
-    { 'name': 'html', 'image': 'html.jpg' },
-    { 'name': 'java', 'image': 'java.png' },
-    { 'name': 'js', 'image': 'js.jpg' },
-    { 'name': 'keras', 'image': 'keras.jpg' },
-    { 'name': 'node', 'image': 'node.jpg' },
-    { 'name': 'numpy', 'image': 'numpy.png' },
-    { 'name': 'python', 'image': 'python.jpg' },
-    { 'name': 'python', 'image': 'python.png' },
-    { 'name': 'rct', 'image': 'rct.jpg' },
-    { 'name': 'redux', 'image': 'redux.jpg' },
-    { 'name': 'sklearn', 'image': 'sklearn.jpg' }
+    { 'name': 'Android', 'image': 'android.png' },
+    { 'name': 'Angular', 'image': 'ang.jpg' },
+    { 'name': 'C', 'image': 'c.png' },
+    { 'name': 'CSS', 'image': 'css.jpg' },
+    { 'name': 'Django', 'image': 'django.jpg' },
+    { 'name': 'HTML', 'image': 'html.jpg' },
+    { 'name': 'Java', 'image': 'java.png' },
+    { 'name': 'Javascript', 'image': 'js.jpg' },
+    { 'name': 'Keras', 'image': 'keras.jpg' },
+    { 'name': 'Node.js', 'image': 'node.jpg' },
+    { 'name': 'Numpy', 'image': 'numpy.png' },
+    { 'name': 'Python', 'image': 'python.jpg' },
+    { 'name': 'Python', 'image': 'python.png' },
+    { 'name': 'React', 'image': 'rct.jpg' },
+    { 'name': 'Redux', 'image': 'redux.jpg' },
+    { 'name': 'Sklearn', 'image': 'sklearn.jpg' }
 ]
 
