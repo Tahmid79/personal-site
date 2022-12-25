@@ -12,14 +12,19 @@
                     <h1 class="project-name" >{{ linksTitle }}</h1>
 
                     <div fxLayout="row" fxLayoutGap="10px">
-                        <div class="link-container mat-elevation-z10"  *ngFor="let link of links"
-                            [style.background-image]="getImageCss(link, linkDir)" >
+                        <div class="link-container mat-elevation-z10"
+                             *ngIf="isLinkValid(project.githubLink)" (click)="openLink(project.githubLink)"
+                             [style.background-image]="getImageCss(links[0], linkDir)" >
+                        </div>
+                        <div class="link-container mat-elevation-z10"
+                             *ngIf="isLinkValid(project.demoLink)" (click)="openLink(project.demoLink)"
+                             [style.background-image]="getImageCss(links[1], linkDir)" >
                         </div>
                     </div>
 
                     <h1 class="project-name" >{{ techTitle }}</h1>
 
-                    <p class="stack-list" >{{ stackList }}</p>
+                    <p class="stack-list" >{{  getTechStack(project.technology)  }}</p>
 
                 </div>
             </div>

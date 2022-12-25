@@ -34,4 +34,27 @@ export class ProjectSegmentComponent implements OnInit {
     return imageCss ;
   }
 
+  getTechStack(stack: string[]): string {
+    let result = '' ;
+
+    for(let i = 0 ; i < stack.length ; i++){
+      const item = stack[i] ;
+      if(i == stack.length - 1 ){
+        result += item ;
+      }else{
+        result += item + ', '
+      }
+    }
+
+    return result ;
+  }
+
+  openLink(link : string){
+    window.open(link, '_blank');
+  }
+
+  isLinkValid(link : string) : boolean {
+    return link !== null && link !== '' ;
+  }
+
 }
