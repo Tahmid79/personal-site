@@ -8,6 +8,7 @@ import { HomeBannerComponent } from './components/home-banner/home-banner.compon
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillSegmentComponent } from './components/skill-segment/skill-segment.component';
+import { ProjectSegmentComponent } from './components/project-segment/project-segment.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SkillSegmentComponent } from './components/skill-segment/skill-segment.
     HomeBannerComponent,
     EducationComponent,
     ExperienceComponent,
-    SkillSegmentComponent
+    SkillSegmentComponent,
+    ProjectSegmentComponent
   ],
   imports: [
     CommonModule,

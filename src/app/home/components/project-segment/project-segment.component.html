@@ -1,0 +1,29 @@
+<div class="project-segment-container" >
+    <div class="container-padding" >
+        <h1 class="page-title text-center" >{{project_segment_title}}</h1>
+
+        <div fxLayout="column" fxLayoutAlign="start center" >
+            <div *ngFor="let project of projects" class="project-box" fxLayout="row" >
+                <div fxFlex="50%" class="project-image" [style.background-image]="getImageCss(project.image , projectDir)" ></div>
+                <div fxFlex="50%" class="project-details" >
+
+                    <h1 class="project-name text-center" >{{project.name}}</h1>
+                    <p class="project-description" >{{project.description}}</p>
+                    <h1 class="project-name" >{{ linksTitle }}</h1>
+
+                    <div fxLayout="row" fxLayoutGap="10px">
+                        <div class="link-container mat-elevation-z10"  *ngFor="let link of links"
+                            [style.background-image]="getImageCss(link, linkDir)" >
+                        </div>
+                    </div>
+
+                    <h1 class="project-name" >{{ techTitle }}</h1>
+
+                    <p class="stack-list" >{{ stackList }}</p>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
