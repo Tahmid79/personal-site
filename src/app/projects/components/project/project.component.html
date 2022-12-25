@@ -11,11 +11,16 @@
             {{projectInfo.description}}
         </p>
 
-        <h1 class="project-title">{{linkTitle}}</h1>
+        <h1 class="project-title" *ngIf="isLinkValid(projectInfo.githubLink) || isLinkValid(projectInfo.demoLink) " >{{linkTitle}}</h1>
 
         <div fxLayout="row" fxLayoutGap="10px">
-            <div class="link-container mat-elevation-z10"  *ngFor="let link of links"
-                [style.background-image]="getImageCss(link, linkDir)" >
+            <div class="link-container mat-elevation-z10"
+                *ngIf="isLinkValid(projectInfo.githubLink)" (click)="openLink(projectInfo.githubLink)"
+                [style.background-image]="getImageCss(links[0], linkDir)" >
+            </div>
+            <div class="link-container mat-elevation-z10"
+                    *ngIf="isLinkValid(projectInfo.demoLink)" (click)="openLink(projectInfo.demoLink)"
+                    [style.background-image]="getImageCss(links[1], linkDir)" >
             </div>
         </div>
 

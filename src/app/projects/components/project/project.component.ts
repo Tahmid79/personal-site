@@ -46,5 +46,13 @@ export class ProjectComponent implements OnInit {
     return result ;
   }
 
+  openLink(link : string){
+    window.open(link, '_blank');
+  }
+
+  isLinkValid(link : string) : boolean {
+    return link !== null && link !== '' ;
+  }
+
 
 }

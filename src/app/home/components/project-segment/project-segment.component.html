@@ -9,7 +9,7 @@
 
                     <h1 class="project-name text-center" >{{project.name}}</h1>
                     <p class="project-description" >{{project.description}}</p>
-                    <h1 class="project-name" >{{ linksTitle }}</h1>
+                    <h1 class="project-name" *ngIf="isLinkValid(project.githubLink) || isLinkValid(project.demoLink)" >{{ linksTitle }}</h1>
 
                     <div fxLayout="row" fxLayoutGap="10px">
                         <div class="link-container mat-elevation-z10"

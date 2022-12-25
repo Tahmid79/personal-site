@@ -57,6 +57,10 @@
     background-color: black;
     border-radius: 3px ;
     margin: 20px 0;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .stack-container{
