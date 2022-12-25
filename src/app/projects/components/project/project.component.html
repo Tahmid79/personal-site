@@ -21,14 +21,16 @@
 
         <h1 class="project-title">{{tech}}</h1>
 
-        <div class="stack-container mat-elevation-z5" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px"  >
+        <p class="stack-list" >{{ getTechStack(projectInfo.technology) }}</p>
+
+        <!-- <div class="stack-container mat-elevation-z5" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px"  >
             <div *ngFor="let skill of skills">
                 <div class="skill-holder mat-elevation-z2"
                     [style.background-image]="getImageCss(skill.image, skillsDir)" >
                 </div>
             </div>
         
-        </div>
+        </div> -->
        
 
     </div>
