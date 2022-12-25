@@ -9,7 +9,7 @@ import { Skills } from '../../../data/skills';
 })
 export class ProjectComponent implements OnInit {
 
-  @Input() projectInfo: IProject =  { 'name': 'card', 'image': 'card.JPG', 'description': 'This is the project description', 'technology' : [] } ;
+  @Input() projectInfo: IProject =  { 'name': 'card', 'image': 'card.JPG', 'description': 'This is the project description', 'technology' : [], 'githubLink' : '' , 'demoLink' : '' } ;
   projectDir = '/assets/images/projects/' ;
   linkDir = '/assets/images/' ;
   skillsDir = '/assets/images/tech stack old/' ;
