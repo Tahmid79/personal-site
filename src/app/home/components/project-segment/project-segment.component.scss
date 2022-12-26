@@ -85,8 +85,25 @@
     }
 }
 
+.button-container{
+    margin: 20px 3px ;
+    width: 100%  ;
+}
+
+.project-button{
+    width: 170px ;
+    height: 60px ;
+
+    font-size: 22px ;
+
+    color: white ;
+    background-color: black ;
+    border-radius: 6px ;
+}
+
 @media screen and (max-width: 550px) {
     .project-container-small{
         grid-template-columns: repeat(auto-fill, 95% ); /* 2 */
     }
 }
+
