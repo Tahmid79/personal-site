@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Topic, Description } from '../../../data/dissertation';
+import { Topic, Description, GithubLink, DriveLink } from '../../../data/dissertation';
 
 @Component({
   selector: 'app-dissertation-container',
@@ -22,6 +22,9 @@ export class DissertationContainerComponent implements OnInit {
 
   codeLinkTitle = 'Code' ;
 
+  githubLink = GithubLink ;
+  driveLink = DriveLink ;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -37,6 +40,10 @@ export class DissertationContainerComponent implements OnInit {
     const url = dir + image ;
     const imageCss =  `url("${url}")` ;
     return imageCss ;
+  }
+
+  openLink(link : string){
+    window.open(link, '_blank');
   }
 
 }
