@@ -112,3 +112,11 @@
         color: white ;
     }
 }
+
+@media screen and (min-width : 1400px ) {
+    .education-details-segment{
+        width: 1150px ;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
+}
