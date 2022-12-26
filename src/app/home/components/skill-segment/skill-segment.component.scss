@@ -25,12 +25,12 @@
     margin: 2px auto;
 }
 
-// .skills-container{
-//     display: grid; /* 1 */
-//     grid-template-columns: repeat(auto-fill, 170px); /* 2 */
-//     // grid-gap: 1rem; /* 3 */
-//     justify-content: space-around ; /* 4 */
-// }
+.skills-container-small{
+    display: grid; /* 1 */
+    grid-template-columns: repeat(auto-fill, 170px); /* 2 */
+    // grid-gap: 1rem; /* 3 */
+    justify-content: space-around ; /* 4 */
+}
 
 // @media screen and ( min-width: 1500px ){
 //     .skills-container{

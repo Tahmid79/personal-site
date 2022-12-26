@@ -2,8 +2,14 @@
     <div class="container-padding" >
         <h1 class="page-title text-center" >{{skill_segment_title}}</h1>
 
-            <div class="skills-container" fxLayout="row" fxLayoutAlign="space-between center" >
+            <div class="skills-container" fxHide.lt-md fxLayout="row" fxLayoutAlign="space-between center" >
                 <div fxFlex="25%" *ngFor="let skill of skills" fxLayout="row" fxLayoutAlign="center center" >
+                    <app-skill  [skillInfo]="skill" ></app-skill>
+                </div>
+            </div>
+
+            <div class="skills-container-small" fxHide.gt-sm >
+                <div *ngFor="let skill of skills" >
                     <app-skill  [skillInfo]="skill" ></app-skill>
                 </div>
             </div>
