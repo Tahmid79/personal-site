@@ -1,0 +1,44 @@
+<div class="project-holder">
+
+    <div class="project-image" 
+        [style.background-image]="getImageCss(projectInfo.image, projectDir)" >
+    </div>
+    
+    <div class="project-description-container">
+        <h1 class="project-name">{{projectInfo.name}}</h1>
+
+        <p class="description">
+            {{projectInfo.description}}
+        </p>
+
+        <h1 class="project-title" *ngIf="isLinkValid(projectInfo.githubLink) || isLinkValid(projectInfo.demoLink)" >{{linkTitle}}</h1>
+
+        <div fxLayout="row" fxLayoutGap="10px">
+            <div class="link-container mat-elevation-z10"
+                *ngIf="isLinkValid(projectInfo.githubLink)" (click)="openLink(projectInfo.githubLink)"
+                [style.background-image]="getImageCss(links[0], linkDir)" >
+            </div>
+            <div class="link-container mat-elevation-z10"
+                    *ngIf="isLinkValid(projectInfo.demoLink)" (click)="openLink(projectInfo.demoLink)"
+                    [style.background-image]="getImageCss(links[1], linkDir)" >
+            </div>
+        </div>
+
+        <h1 class="project-title">{{tech}}</h1>
+
+        <p class="stack-list" >{{ getTechStack(projectInfo.technology) }}</p>
+
+        <!-- <div class="stack-container mat-elevation-z5" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px"  >
+            <div *ngFor="let skill of skills">
+                <div class="skill-holder mat-elevation-z2"
+                    [style.background-image]="getImageCss(skill.image, skillsDir)" >
+                </div>
+            </div>
+        
+        </div> -->
+       
+
+    </div>
+    
+</div>
+

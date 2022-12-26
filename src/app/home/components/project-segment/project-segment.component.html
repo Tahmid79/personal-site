@@ -2,7 +2,7 @@
     <div class="container-padding" >
         <h1 class="page-title text-center" >{{project_segment_title}}</h1>
 
-        <div fxLayout="column" fxLayoutAlign="start center" >
+        <div fxHide.lt-md fxLayout="column" fxLayoutAlign="start center" >
             <div *ngFor="let project of projects" class="project-box" fxLayout="row" >
                 <div fxFlex="50%" class="project-image" [style.background-image]="getImageCss(project.image , projectDir)" ></div>
                 <div fxFlex="50%" class="project-details" >
@@ -27,6 +27,12 @@
                     <p class="stack-list" >{{  getTechStack(project.technology)  }}</p>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="project-container-small" fxHide.gt-sm >
+            <div *ngFor="let project of projects" >
+                <app-project-box [projectInfo]="project" ></app-project-box>
             </div>
         </div>
         
