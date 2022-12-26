@@ -22,14 +22,14 @@
             <div class="link-segment" fxLayout="row" fxLayoutGap.gt-xs="20px" fxLayoutAlign.xs="space-between" >
                 <div>
                     <h1 class="fyp-large-text">{{codeLinkTitle}}</h1>
-                    <div class="link-container mat-elevation-z10"
+                    <div class="link-container mat-elevation-z10" (click)="openLink(githubLink)"
                         [style.background-image]="getImageCss(githubImg, linkDir)" >
                     </div>
                 </div>
             
                 <div>
                     <h1 class="fyp-large-text">{{full_dissertation}}</h1>
-                    <div class="link-container mat-elevation-z10"
+                    <div class="link-container mat-elevation-z10" (click)="openLink(driveLink)"
                         [style.background-image]="getImageCss(driveImg, linkDir)" >
                     </div>
                 </div>
